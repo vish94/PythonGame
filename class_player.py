@@ -15,3 +15,8 @@ class Player(object):
     def get_max_health(self):
         return self.max_health
         
+    def do_damage(self, dragon):
+        dragon.health = dragon.health - self.weapon.damage
+        
+    def change_weapon(self, weapon):
+        self.weapon = weapon

@@ -1,7 +1,7 @@
-from class_weapons import Weapons
-from class_player import Player
+from initialize import *
 
 gun = Weapons("Gun", 10, 0)
-p = Player("Vishesh", gun)
-print p.name
-print p.weapon.name
+vish = Player("Vishesh", gun)
+dragon = Dragon(1, 50)
+
+print vish.name
