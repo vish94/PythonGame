@@ -5,7 +5,7 @@ from class_dragon import Dragon
 Commands = {
     'quit' : Player.exitgame,
     'help' : Player.askhelp,
-    #'status' : Player.status,
+    'status' : Player.status,
 }
 
 gun = Weapons("Gun", 10, -1)
