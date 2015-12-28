@@ -1,10 +1,11 @@
 class Player(object):
-    def __init__(self, name, gun):
+    def __init__(self, name, gun, commands):
         self.name = name
         self.coins = 0
         self.health = 100
         self.max_health = 100
         self.weapon = gun
+        self.commands = commands
     
     def set_name(self, name):
         self.name = name
@@ -23,3 +24,6 @@ class Player(object):
         
     def change_weapon(self, weapon):
         self.weapon = weapon
+        
+    def askhelp(self):
+        print self.commands.keys()
