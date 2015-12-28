@@ -1,7 +1,5 @@
 from initialize import *
 
-gun = Weapons("Gun", 10, 0)
-vish = Player("Vishesh", gun)
-dragon = Dragon(1, 50)
-
-print vish.name
+print "Enter your name?"
+name = raw_input("> ")
+player.set_name(name)
