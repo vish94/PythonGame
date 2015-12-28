@@ -4,3 +4,6 @@ class Dragon(object):
         self.name = "Dragon"
         self.health = health
         self.damage = 5
+    
+    def do_damage(self, player):
+        player.health = player.health - self.damage
