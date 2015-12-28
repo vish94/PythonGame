@@ -5,6 +5,9 @@ class Player(object):
         self.health = 100
         self.max_health = 100
         self.weapon = gun
+    
+    def set_name(self, name):
+        self.name = name
         
     def get_health(self):
         return self.health
