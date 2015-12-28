@@ -3,7 +3,7 @@ from class_player import Player
 from class_dragon import Dragon
 
 Commands = {
-    #'quit' : Player.exitgame,
+    'quit' : Player.exitgame,
     'help' : Player.askhelp,
     #'status' : Player.status,
 }

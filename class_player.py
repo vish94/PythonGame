@@ -27,3 +27,7 @@ class Player(object):
         
     def askhelp(self):
         print self.commands.keys()
+    
+    def exitgame(self):
+        print "You were eaten by the dragon!"
+        quit()
