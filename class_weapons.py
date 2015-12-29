@@ -10,6 +10,9 @@ class Weapons(object):
     def get_damage(self):
         return self.damage
         
+    def do_damage(self, player, dragon):
+        dragon.health = dragon.health - self.damage
+        
         
 class Guns(Weapons):
     def __init__(self, name, damage, price):
