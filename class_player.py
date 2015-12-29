@@ -52,10 +52,14 @@ class Player(object):
         else:
             return 0
         
-    def status(self):
+    def status(self, dragon):
         print "Health: " + str(self.get_health()) + " of " + str(self.get_max_health())
         print "Coins: " + str(self.get_coins())
         print "Weapon name: " + self.weapon.get_name() + "  Damage: " + str(self.weapon.get_damage())
+        print "Dragon Level: " + str(dragon.get_level())+ "   Damage: " + str(dragon.get_damage()) + " Health: "+str(dragon.get_health())
         
-    def attack(self):
-        
+    def attack(self, dragon):
+        self.do_damage(1, dragon)
+    
+    def throwgrenade(self, dragon):
+        self.do_damage(2, dragon)
