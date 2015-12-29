@@ -56,3 +56,6 @@ class Player(object):
         print "Health: " + str(self.get_health()) + " of " + str(self.get_max_health())
         print "Coins: " + str(self.get_coins())
         print "Weapon name: " + self.weapon.get_name() + "  Damage: " + str(self.weapon.get_damage())
+        
+    def attack(self):
+        
