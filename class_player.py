@@ -33,6 +33,15 @@ class Player(object):
         print "You were eaten by the dragon!"
         quit()
         
+    def do_damage(self, num, dragon):
+        if num==1:
+            self.weapon.do_damage(self, dragon)
+        else:
+            if self.grenades.get_count() > 0:
+                self.grenades.do_damage(self, dragon)
+            else:
+                print "You dont have anough grenades. Dragon attacks."
+        
     def status(self):
         print "Health: " + str(self.get_health()) + " of " + str(self.get_max_health())
         print "Coins: " + str(self.get_coins())

@@ -18,6 +18,10 @@ class Guns(Weapons):
     def __init__(self, name, damage, price):
         Weapons.__init__(self, name, damage, price)
         
+    def do_damage(self, player, dragon):
+        Weapons.do_damage(self, player, dragon)
+        print "Dragon attacks"
+        
         
         
 class Grenade(Weapons):
@@ -25,3 +29,9 @@ class Grenade(Weapons):
         Weapons.__init__(self, name, damage, price)
         self.count = 0
         
+    def do_damage(self, player, dragon):
+        Weapons.do_damage(self, player, dragon)
+        print "Dragon skipped"
+    
+    def get_count(self):
+        return self.count

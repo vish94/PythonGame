@@ -11,7 +11,7 @@ Commands = {
 }
 
 gun = Guns("Gun", 10, -1)
-grenade = Grenades("Grenade", 50, 20)
+grenade = Grenade("Grenade", 50, 20)
 player = Player("Player", gun, grenade, Commands)
 dragon = Dragon(1, 100, 5)
 
