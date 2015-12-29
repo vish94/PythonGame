@@ -1,3 +1,4 @@
+from random import randint
 from class_weapons import Weapons
 from class_weapons import Guns
 from class_weapons import Grenade
