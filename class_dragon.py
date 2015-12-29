@@ -10,7 +10,7 @@ class Dragon(object):
     
     def do_damage(self, player):
         if player.evade()==1:
-            print player.get_name()+" evades"
+            print player.get_name()+" managed to escape the dragon breath!"
         else:
             player.health = player.health - self.damage
     
@@ -28,10 +28,10 @@ class Dragon(object):
         
         
     def evade(self):
-        if randint(1,3)==1:
-            return 0
-        else:
+        if randint(1,4)==1:
             return 1
+        else:
+            return 0
     
     def nextdragon(self):
         self.level = self.level + 1

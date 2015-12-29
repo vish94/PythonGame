@@ -20,7 +20,7 @@ class Guns(Weapons):
         
     def do_damage(self, player, dragon):
         Weapons.do_damage(self, player, dragon)
-        print "Dragon attacks"
+        dragon.do_damage(self, player)
         
         
         
