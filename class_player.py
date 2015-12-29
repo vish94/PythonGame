@@ -47,8 +47,11 @@ class Player(object):
         else:
             if self.grenades.get_count() > 0:
                 self.grenades.do_damage(self, dragon)
+                print "Here goes the bomb! The dragon cant move now! Dragon Health: " + str(dragon.get_health()) + " of " + str(dragon.get_max_health())
+                
             else:
-                print "You dont have anough grenades. Dragon attacks."
+                print "You dont have anough grenades."
+                dragon.do_damage(self)
     
     def evade(self):
         if randint(1,4)==1:

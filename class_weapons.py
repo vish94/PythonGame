@@ -30,7 +30,6 @@ class Grenade(Weapons):
         
     def do_damage(self, player, dragon):
         Weapons.do_damage(self, player, dragon)
-        print "Dragon skipped"
     
     def get_count(self):
         return self.count
