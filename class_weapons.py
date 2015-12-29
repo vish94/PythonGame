@@ -9,3 +9,16 @@ class Weapons(object):
     
     def get_damage(self):
         return self.damage
+        
+        
+class Guns(Weapons):
+    def __init__(self, name, damage, price):
+        Weapons.__init__(self, name, damage, price)
+        
+        
+        
+class Grenade(Weapons):
+    def __init__(self, name, damage, price):
+        Weapons.__init__(self, name, damage, price)
+        self.count = 0
+        
