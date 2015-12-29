@@ -38,10 +38,12 @@ class Player(object):
         if num==1:
             if dragon.evade()==1:
                 print "You fired the weapon but the dragon was fast enough to escape!"
+                dragon.do_damage(self)
             else:
                 self.weapon.do_damage(self, dragon)
                 print "Direct Hit! Dragon Health: " + str(dragon.get_health()) + " of " + str(dragon.get_max_health())
                 print "Coins: "+str(self.get_coins())
+                dragon.do_damage(self)
         else:
             if self.grenades.get_count() > 0:
                 self.grenades.do_damage(self, dragon)

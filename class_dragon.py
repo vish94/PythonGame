@@ -13,6 +13,8 @@ class Dragon(object):
             print player.get_name()+" managed to escape the dragon breath!"
         else:
             player.health = player.health - self.damage
+            print "Ahhh! You took damage"
+            print "Your health: "+ str(player.get_health()) + " of " + str(player.get_max_health())
     
     def get_health(self):
         return self.health
@@ -38,4 +40,4 @@ class Dragon(object):
         self.max_health = self.max_health + 50
         self.health = self.max_health
         self.damage = self.damage + 1
-        print "You are attacked by the next dragon. Health: "+self.health+" .Damage: "+self.damage
+        print "You are attacked by the next dragon. Health: "+str(self.get_health())+" .Damage: "+str(self.get_damage())

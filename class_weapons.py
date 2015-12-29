@@ -20,7 +20,6 @@ class Guns(Weapons):
         
     def do_damage(self, player, dragon):
         Weapons.do_damage(self, player, dragon)
-        dragon.do_damage(self, player)
         
         
         
