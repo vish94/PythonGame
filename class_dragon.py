@@ -22,6 +22,9 @@ class Dragon(object):
     
     def get_level(self):
         return self.level
+    
+    def get_max_health(self):
+        return self.max_health
         
         
     def evade(self):

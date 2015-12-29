@@ -5,7 +5,7 @@ name = raw_input("> ")
 player.set_name(name)
 
 print "Welcome "+player.get_name()+"! Ready to face this Python adventure? Fight with the dragon till you survive!"
-player.status()
+player.status(dragon)
 print "Write 'help' to see all the valid keys"
 level = 1
 while(player.get_health()>0):
