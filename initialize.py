@@ -6,11 +6,11 @@ from class_player import Player
 from class_dragon import Dragon
 
 Commands = {
-    'quit' : Player.exitgame,
-    'help' : Player.askhelp,
-    'status' : Player.status,
-    'attack' : Player.attack,
-    'throwgrenade': Player.throwgrenade,
+    'quit' : "Exit Game",
+    'help' : "See all valid keywords",
+    'status' : "Check player status",
+    'attack' : "Attack dragon with the current Gun",
+    'throwgrenade': "Throw granade on dragon",
 }
 
 gun = Guns("Gun", 10, -1)
