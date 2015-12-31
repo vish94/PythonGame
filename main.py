@@ -33,6 +33,21 @@ while(player.get_health()>0):
             for thisgun in guns:
                 if thisgun.level>player.weapon.level:
                     thisgun.show_information(guns.index(thisgun))
+            print "Type return to resume the game"
+            weaponkey = raw_input(">> ")
+            if(weaponkey=="return"):
+                continue
+            else:
+                try:
+                    weaponkey = int(weaponkey)
+                except:
+                    print "Not a valid input"
+                    continue
+                i = 0
+                for thisgun in guns:
+                    if i==weaponkey:
+                        thisgun.buy(player)
+                    i=i+1
         else:
             print "I could not validate the keyword. Type help to see all valid keywords"
     

@@ -2,7 +2,7 @@ from random import randint
 class Player(object):
     def __init__(self, name, gun, grenade, commands):
         self.name = name
-        self.coins = 0
+        self.coins = 10000
         self.health = 100
         self.max_health = 100
         self.weapon = gun
