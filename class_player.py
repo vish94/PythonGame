@@ -64,6 +64,7 @@ class Player(object):
         print "Health: " + str(self.get_health()) + " of " + str(self.get_max_health())
         print "Coins: " + str(self.get_coins())
         print "Weapon name: " + self.weapon.get_name() + "  Damage: " + str(self.weapon.get_damage())
+        print "Grenades: " + str(self.grenades.count)
         print "Dragon Level: " + str(dragon.get_level())+ "   Damage: " + str(dragon.get_damage()) + "   Health: "+str(dragon.get_health())+" of "+str(dragon.get_max_health())
         
     def attack(self, dragon):
