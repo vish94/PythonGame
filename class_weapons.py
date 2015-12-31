@@ -49,4 +49,12 @@ class Grenade(Weapons):
     def get_count(self):
         return self.count
 
+    def buygrenade(self, player):
+        if player.coins > self.price:
+            self.count = self.count + 1
+            player.coins = player.coins - self.price
+            print "You bought a grenade!"
+        else:
+            print "You dont have enough coins to buy grenades"
+            
             

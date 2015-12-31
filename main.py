@@ -33,10 +33,14 @@ while(player.get_health()>0):
             for thisgun in guns:
                 if thisgun.level>player.weapon.level:
                     thisgun.show_information(guns.index(thisgun))
+            grenade.show_information(10)
             print "Type return to resume the game"
             weaponkey = raw_input(">> ")
             if(weaponkey=="return"):
                 continue
+            elif(weaponkey=="10"):
+                weaponey = int(weaponkey)
+                grenade.buygrenade(player)
             else:
                 try:
                     weaponkey = int(weaponkey)
@@ -48,8 +52,6 @@ while(player.get_health()>0):
                     if i==weaponkey:
                         thisgun.buy(player)
                     i=i+1
-        elif(keyword=="buygrenade"):
-            
         else:
             print "I could not validate the keyword. Type help to see all valid keywords"
     

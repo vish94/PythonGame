@@ -12,7 +12,6 @@ Commands = {
     'attack' : "Attack dragon with the current Gun",
     'throwgrenade': "Throw granade on dragon",
     'allweapons': "Show all weapons",
-    'buygrenade': "Buy Grenades",
 }
 
 gun = Guns("Gun", 10, -1, 1)
