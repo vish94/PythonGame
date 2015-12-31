@@ -15,15 +15,19 @@ class Weapons(object):
     
     def get_price(self):
         return self.price
+    
+    def show_information(self):
+        print "Weapon Name: "+self.name+". Damage: "+str(self.damage)+". Price: "+str(self.price)
         
         
 class Guns(Weapons):
-    def __init__(self, name, damage, price):
+    def __init__(self, name, damage, price, level):
         Weapons.__init__(self, name, damage, price)
+        self.level = level
         
     def do_damage(self, player, dragon):
         Weapons.do_damage(self, player, dragon)
-
+        
         
 class Grenade(Weapons):
     def __init__(self, name, damage, price):

@@ -29,6 +29,10 @@ while(player.get_health()>0):
             player.attack(dragon)
         elif(keyword=="throwgrenade"):
             player.throwgrenade(dragon)
+        elif(keyword=="allweapons"):
+            for thisgun in guns:
+                if thisgun.level>player.weapon.level:
+                    thisgun.show_information()
         else:
             print "I could not validate the keyword. Type help to see all valid keywords"
     

@@ -11,9 +11,15 @@ Commands = {
     'status' : "Check player status",
     'attack' : "Attack dragon with the current Gun",
     'throwgrenade': "Throw granade on dragon",
+    'allweapons': "Show all weapons",
 }
 
-gun = Guns("Gun", 10, -1)
+gun = Guns("Gun", 10, -1, 1)
+shotgun = Guns("Shot Gun", 25, 250, 2)
+submachinegun = Guns("Sub Machine Gun", 50, 500, 3)
+rifle = Guns("Rifle", 100, 1000, 4)
+machinegun = Guns("Machine Gun", 250, 5000, 5)
+guns = [gun, shotgun, submachinegun, rifle, machinegun]
 grenade = Grenade("Grenade", 50, 25)
 player = Player("Player", gun, grenade, Commands)
 dragon = Dragon(1, 100,100, 5)
