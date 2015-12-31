@@ -16,8 +16,8 @@ class Weapons(object):
     def get_price(self):
         return self.price
     
-    def show_information(self):
-        print "Weapon Name: "+self.name+". Damage: "+str(self.damage)+". Price: "+str(self.price)
+    def show_information(self, num):
+        print "Weapon Name: "+self.name+". Damage: "+str(self.damage)+". Price: "+str(self.price)+". Type "+str(num)+" to buy"
         
         
 class Guns(Weapons):

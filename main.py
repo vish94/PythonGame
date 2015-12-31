@@ -32,7 +32,7 @@ while(player.get_health()>0):
         elif(keyword=="allweapons"):
             for thisgun in guns:
                 if thisgun.level>player.weapon.level:
-                    thisgun.show_information()
+                    thisgun.show_information(guns.index(thisgun))
         else:
             print "I could not validate the keyword. Type help to see all valid keywords"
     
