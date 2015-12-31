@@ -48,6 +48,8 @@ while(player.get_health()>0):
                     if i==weaponkey:
                         thisgun.buy(player)
                     i=i+1
+        elif(keyword=="buygrenade"):
+            
         else:
             print "I could not validate the keyword. Type help to see all valid keywords"
     
