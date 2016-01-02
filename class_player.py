@@ -72,3 +72,14 @@ class Player(object):
     
     def throwgrenade(self, dragon):
         self.do_damage(2, dragon)
+        
+    def buyarmour(self):
+        armprice = self.max_health + 10
+        if self.coins>armprice:
+            self.coins = self.coins - armprice
+            self.max_health = armprice
+            self.health = armprice
+            print "You upgraded your armour! Health: "+str(self.health)+" of "+str(self.max_health)
+        else:
+            print "You dont have enough coins to buy armour"
+        
