@@ -43,7 +43,7 @@ class Player(object):
             else:
                 self.weapon.do_damage(self, dragon)
                 print "Direct Hit! Dragon Health: " + str(dragon.get_health()) + " of " + str(dragon.get_max_health())
-                self.coins = self.coins + self.weapon.damage/2
+                self.coins = self.coins + self.weapon.damage/2 + self.weapon.damage/dragon.get_level()
                 print "Coins: "+str(self.get_coins())
                 dragon.do_damage(self)
         else:
