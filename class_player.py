@@ -2,7 +2,7 @@ from random import randint
 class Player(object):
     def __init__(self, name, gun, grenade, commands):
         self.name = name
-        self.coins = 10000
+        self.coins = 0
         self.health = 100
         self.max_health = 100
         self.weapon = gun
@@ -43,7 +43,7 @@ class Player(object):
             else:
                 self.weapon.do_damage(self, dragon)
                 print "Direct Hit! Dragon Health: " + str(dragon.get_health()) + " of " + str(dragon.get_max_health())
-                self.coins = self.coins + self.weapon.damage/2 + self.coins/5
+                self.coins = self.coins + self.weapon.damage/2
                 print "Coins: "+str(self.get_coins())
                 dragon.do_damage(self)
         else:
