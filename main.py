@@ -53,7 +53,7 @@ while(player.get_health()>0):
                         thisgun.buy(player)
                     i=i+1
         elif(keyword=="buyarmour"):
-            player.buyarmour()
+            player.buyarmour(dragon)
         else:
             print "I could not validate the keyword. Type help to see all valid keywords"
     
