@@ -87,3 +87,8 @@ class Player(object):
             else:
                 print "You dont have enough coins to buy armour"
             
+    def give_health_warning(self):
+        if self.health <= (20/100)*self.max_health:
+            print "Less than 20% health remaining. Upgrade your armour by typing buyarmour. You cannot upgrade armour while fighting a dragon"
+        else:
+            print "You may upgrade your armour now by typing buyarmour."

@@ -16,6 +16,7 @@ while(player.get_health()>0):
         level = level + 1
         print "You killed the dragon. Now you will face the level: "+str(level)+" dragon!"
         dragon.nextdragon()
+        player.give_health_warning()
         
     else:    
         keyword = raw_input("> ")
