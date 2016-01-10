@@ -23,7 +23,7 @@ class Player(object):
         
     def get_max_health(self):
         return self.max_health
-        
+         
     def change_weapon(self, weapon):
         self.weapon = weapon
         
